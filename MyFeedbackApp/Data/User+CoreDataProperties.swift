@@ -19,7 +19,7 @@ extension User {
     @NSManaged public var username: String?
     @NSManaged public var password: String?
 //    @NSManaged var array: NSArray? //no error
-    @NSManaged var answers: Array<Int>?
+    @NSManaged public var answers: [NSNumber]?
 
 }
 

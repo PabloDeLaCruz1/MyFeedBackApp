@@ -54,7 +54,9 @@ class ViewController: UIViewController {
         let user = getUser(usernameSignIn.text!, passwordSignIn.text!)
 
         if user != nil {
-            print((user?.username)!)
+//            print(user)
+//            print((user?.answers)!)
+
             print("You have signed in")
             let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             guard let mainFeedbackScreenViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainFeedbackScreenViewController") as? MainFeedbackScreenViewController

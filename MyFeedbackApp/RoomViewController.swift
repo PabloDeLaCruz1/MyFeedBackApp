@@ -13,10 +13,10 @@ class RoomViewController: ViewController {
     @IBOutlet weak var q1cb2: CheckBox!
     @IBOutlet weak var q1cb3: CheckBox!
     
-    var q1 : Int?
-    var q2 : Int? = 0
+    var q1 : NSNumber? = 0
+    var q2 : NSNumber? = 0
 
-    var q3 : Int? = 0
+    var q3 : NSNumber? = 0
 
     var user: User?
     
@@ -46,12 +46,20 @@ class RoomViewController: ViewController {
     
     
     @IBAction func submitFoodFeedback(_ sender: Any) {
-        var answersArr : Array<Int> = [q1!,q2!,q3!]
+        var answersArr : [NSNumber] = [q1!,q2!,q3!]
+        print(user)
+
+        print("Answers Arr", answersArr)
         updateFeedback(answersArr)
     }
     
-    func updateFeedback(_ answersArr : Array<Int>){
-        user?.answers = answersArr
+    func updateFeedback(_ answersArr : [NSNumber]){
+        user?.answers =  answersArr
+        do{
+            try context.save()
+        }catch {
+            print("Issues with updateFeedback")
+        }
         
     }
     /*

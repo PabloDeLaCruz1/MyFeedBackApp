@@ -20,6 +20,7 @@ class MainFeedbackScreenViewController: ViewController {
 
     }
 
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let s = segue.destination as! RoomViewController
         s.user = self.user
