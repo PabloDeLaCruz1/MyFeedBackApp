@@ -14,6 +14,13 @@
 		FEDBDAE327CA8ABB0001938A /* MyFeedbackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDAE127CA8ABB0001938A /* MyFeedbackApp.xcdatamodeld */; };
 		FEDBDAE527CA8ABE0001938A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDBDAE427CA8ABE0001938A /* Assets.xcassets */; };
 		FEDBDAE827CA8ABE0001938A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDBDAE627CA8ABE0001938A /* LaunchScreen.storyboard */; };
+		FEDBDAF427CA9B2F0001938A /* MainFeedbackScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDAF327CA9B2F0001938A /* MainFeedbackScreenViewController.swift */; };
+		FEDBDAF627CA9F8C0001938A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDAF527CA9F8C0001938A /* SignUpViewController.swift */; };
+		FEDBDAF827CAA5600001938A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEDBDAF727CAA5600001938A /* GoogleService-Info.plist */; };
+		FEDBDB0427CAAA2E0001938A /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDB0227CAAA2E0001938A /* User+CoreDataClass.swift */; };
+		FEDBDB0527CAAA2E0001938A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDB0327CAAA2E0001938A /* User+CoreDataProperties.swift */; };
+		FEDBDB0827CAF3890001938A /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDB0727CAF3890001938A /* RoomViewController.swift */; };
+		FEDBDB0A27CAF46E0001938A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDBDB0927CAF46E0001938A /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		FEDBDAE427CA8ABE0001938A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEDBDAE727CA8ABE0001938A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEDBDAE927CA8ABE0001938A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDBDAF327CA9B2F0001938A /* MainFeedbackScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedbackScreenViewController.swift; sourceTree = "<group>"; };
+		FEDBDAF527CA9F8C0001938A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FEDBDAF727CAA5600001938A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEDBDB0227CAAA2E0001938A /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FEDBDB0327CAAA2E0001938A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FEDBDB0727CAF3890001938A /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		FEDBDB0927CAF46E0001938A /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,31 @@
 		FEDBDAD727CA8ABB0001938A /* MyFeedbackApp */ = {
 			isa = PBXGroup;
 			children = (
+				FEDBDB0627CAAA430001938A /* Data */,
+				FEDBDAF727CAA5600001938A /* GoogleService-Info.plist */,
 				FEDBDAD827CA8ABB0001938A /* AppDelegate.swift */,
 				FEDBDADA27CA8ABB0001938A /* SceneDelegate.swift */,
 				FEDBDADC27CA8ABB0001938A /* ViewController.swift */,
+				FEDBDAF327CA9B2F0001938A /* MainFeedbackScreenViewController.swift */,
 				FEDBDADE27CA8ABB0001938A /* Main.storyboard */,
+				FEDBDB0927CAF46E0001938A /* CheckBox.swift */,
+				FEDBDB0727CAF3890001938A /* RoomViewController.swift */,
+				FEDBDAF527CA9F8C0001938A /* SignUpViewController.swift */,
 				FEDBDAE427CA8ABE0001938A /* Assets.xcassets */,
 				FEDBDAE627CA8ABE0001938A /* LaunchScreen.storyboard */,
 				FEDBDAE927CA8ABE0001938A /* Info.plist */,
 				FEDBDAE127CA8ABB0001938A /* MyFeedbackApp.xcdatamodeld */,
 			);
 			path = MyFeedbackApp;
+			sourceTree = "<group>";
+		};
+		FEDBDB0627CAAA430001938A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FEDBDB0227CAAA2E0001938A /* User+CoreDataClass.swift */,
+				FEDBDB0327CAAA2E0001938A /* User+CoreDataProperties.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +115,8 @@
 			dependencies = (
 			);
 			name = MyFeedbackApp;
+			packageProductDependencies = (
+			);
 			productName = MyFeedbackApp;
 			productReference = FEDBDAD527CA8ABB0001938A /* MyFeedbackApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +145,8 @@
 				Base,
 			);
 			mainGroup = FEDBDACC27CA8ABB0001938A;
+			packageReferences = (
+			);
 			productRefGroup = FEDBDAD627CA8ABB0001938A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEDBDAE827CA8ABE0001938A /* LaunchScreen.storyboard in Resources */,
+				FEDBDAF827CAA5600001938A /* GoogleService-Info.plist in Resources */,
 				FEDBDAE527CA8ABE0001938A /* Assets.xcassets in Resources */,
 				FEDBDAE027CA8ABB0001938A /* Main.storyboard in Resources */,
 			);
@@ -141,10 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDBDAF627CA9F8C0001938A /* SignUpViewController.swift in Sources */,
 				FEDBDADD27CA8ABB0001938A /* ViewController.swift in Sources */,
+				FEDBDB0527CAAA2E0001938A /* User+CoreDataProperties.swift in Sources */,
 				FEDBDAD927CA8ABB0001938A /* AppDelegate.swift in Sources */,
+				FEDBDB0A27CAF46E0001938A /* CheckBox.swift in Sources */,
 				FEDBDAE327CA8ABB0001938A /* MyFeedbackApp.xcdatamodeld in Sources */,
+				FEDBDAF427CA9B2F0001938A /* MainFeedbackScreenViewController.swift in Sources */,
+				FEDBDB0827CAF3890001938A /* RoomViewController.swift in Sources */,
 				FEDBDADB27CA8ABB0001938A /* SceneDelegate.swift in Sources */,
+				FEDBDB0427CAAA2E0001938A /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
