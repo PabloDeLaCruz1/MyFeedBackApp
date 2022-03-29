@@ -2,6 +2,7 @@
 
 ## Outline for Resort Feedback Application
 
+[Powerpoint Presentation](https://docs.google.com/presentation/d/1XdEA4RJkcOgDEuM-KukiOvg5YXZ1-Ny7BWffat3pKk4/edit#slide=id.p)
 
 ## Features:
 
